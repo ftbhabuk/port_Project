@@ -11,7 +11,7 @@ body{
 #header{
   width:100%;
   height:100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/fblack.png);
   background-size:cover;
   background-position: center;
 }
@@ -179,7 +179,7 @@ display:none;
 }
 .work{
   border-radius:10px;
-  position:reative;
+  position:relative;
   overflow:hidden;
 }
 .work.img{
@@ -196,6 +196,7 @@ display:none;
   position:absolute;
   left:0;
   bottom:0;
+  overflow: hidden;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -203,7 +204,7 @@ display:none;
   padding: 0 40px;
   text-align: center;
   font-size: 14px;
-  transition: height:0.5s;
+  transition: height 0.5s;
 }
 .layer h3{
   font-weight:500;
@@ -236,9 +237,8 @@ transform:scale(1.1);
   border-radius: 6px;
   text-decoration: none;
   color:#fff;
-  transition: background 0.5s;
+  transition:background 0.5s;
 }
 .btn:hover{
   background: #ff004f;
-
 }
