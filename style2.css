@@ -24,15 +24,15 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex; /* Added */
-  justify-content: flex-end; /* Added */
-  align-items: center; /* Added */
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center; 
 }
 
 .header-text {
   margin-top: 20%;
   font-size: 30px;
-  text-align: left; /* Added */
+  text-align: left; 
 }
 
 .header-text h1 {
@@ -44,9 +44,9 @@ body {
   color: #ff004f;
 }
 
-/* Align UI/UX Designer to the right */
+/* Align UI/UX Designer to the left */
 .header-text p {
-  text-align: left; /* Added */
+  text-align: left; 
 }
 
 .container {
@@ -256,14 +256,14 @@ nav ul li a:hover::after {
 .work img {
   width: 100%;
   height: auto;
-  max-width: 300px; /* Adjust the max width as needed */
-  border-radius: 10px;
+  max-width: 410px; 
+  border-radius: 20px;
   display: block;
   transition: transform 0.5s;
 }
 
 .layer {
-  width: 100%;
+  width: 87%;
   height: 0%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border-radius: 10px;
@@ -360,7 +360,17 @@ nav ul li a:hover::after {
 }
 
 .btn.btn2 {
-  display: inline-block;
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s; /*submitn cv dwnload btn*/
+}
+.btn.btn2:hover {
   background: #ff004f;
 }
 
@@ -385,19 +395,24 @@ form .btn2 {
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+  background:#000000;
+  transition: background 0.5s;
+}
+form .btn2:hover{
+  background: #ff004f;
 }
 
 .copyright {
   width: 100%;
   text-align: center;
   padding: 12px 0;
-  background: #000000;
+  background: #fff;
   font-weight: light;
   margin-top: 20px;
 }
 
-copyright i {
-  color: #ff004f;
+.copyright i {
+  color:#ff004f;
 }
 
 /* Small Screen Styles */
@@ -425,8 +440,9 @@ copyright i {
 
   .fa-xmark {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 20px;
+    left:20px;
     font-size: 25px;
     cursor: pointer;
     display: none;
@@ -434,13 +450,13 @@ copyright i {
 
   nav ul {
     display: block;
-    background: #ff004f;
+    background:transparent;
     position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
-    height: 100vh;
-    padding-top: 50px;
+    height: 100%;
+    padding-top: 20px;
     z-index: 2;
     transition: right 0.5s;
   }
@@ -492,4 +508,3 @@ copyright i {
     display: none;
   }
 }
-
