@@ -1,3 +1,4 @@
 problems:
-experience doesn't automatically shows untill you click it
-portfolio section problem
+optimization for small screen
+
+add scroll
