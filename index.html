@@ -108,15 +108,15 @@
           <img src="images/work-1.png">
           <div class="layer">
             <h3>Room for shadows</h3>
-            <p>A glimps of my writing in page!<br><br>Unwhispered Perhaps</p>
+            <p>A glimps of my writing in page!<br><br></p>
             <a href="https://www.facebook.com/afellowtraveller23"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
           <img src="images/work-2.png">
           <div class="layer">
-            <h3>Poetry Website</h3>
-            <p>Poems written by myself hehe<br><br>Workin' on it!!</p>
+            <h3>"Unwhispered Perhaps"</h3>
+            <p> Poetry website of own writing hehe<br><br>Workin' on it!!</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
@@ -144,8 +144,9 @@
           <div class="social-icons">
             <a href="https://www.facebook.com/bhabuk.bhattarai.77"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://x.com/FellowTravell20"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+           <!-- no linkdin account yet -->
+            <a href="https://github.com/Ftbhabok"><i class="fa-brands fa-github"></i></a>
           </div>
           <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
         </div>
@@ -210,5 +211,23 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <!-- service learn more transition -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceDivs = document.querySelectorAll('.services-list div');
+      
+      serviceDivs.forEach(div => {
+        const link = div.querySelector('a');
+        
+        link.addEventListener('mouseenter', function() {
+          div.classList.add('link-hover');
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          div.classList.remove('link-hover');
+        });
+      });
+    });
+   </script>
 </body>
 </html>
