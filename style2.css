@@ -34,6 +34,10 @@ body {
   font-size: 30px;
   text-align: left; 
 }
+.header-text p span{
+  color:#ff004f;
+  font:bold;
+}
 
 .header-text h1 {
   font-size: 60px;
@@ -44,7 +48,7 @@ body {
   color: #ff004f;
 }
 
-/* Align UI/UX Designer to the left */
+/* Align Designer // writer to the left */
 .header-text p {
   text-align: left; 
 }
@@ -607,36 +611,4 @@ form .btn2:hover{
     z-index: 2; /* Ensure the menu is above the overlay */
   }
 }
-/*for blur menu effect 
-#content-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  z-index: 1;
-}
-
-@media only screen and (max-width: 600px) {
-  nav ul {
-    background: #1f1f1f;
-    padding-top: 80px;
-  }
-
-  nav ul li {
-    margin: 25px 0;
-  }
-
-  nav ul li a {
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .blur {
-    filter: blur(5px);
-  }
-}*/
-
+/* small screen menu ##2 with idk */
