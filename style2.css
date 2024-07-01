@@ -82,11 +82,11 @@ body {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: -10px; /* Adjust to connect with the previous underline */
+  left: 0;
   width: 0;
-  height: 2px; /* Adjusted height to match the designer line */
+  height: 2px;
   background: linear-gradient(to right, #4ecdc4, transparent);
-  animation: drawInkUnderline 0.6s ease-out forwards 0.7s; /* Delay to start after designer underline */
+  animation: drawUnderline 0.8s ease-out forwards; /* Reduced from 1.5s to 0.8s */
 }
 
 @keyframes drawInkUnderline {
@@ -108,10 +108,10 @@ body {
   font-size: 60px;
   margin-top: 20px;
   opacity: 0;
-  animation: slideUp 1s ease-out forwards 2s;
+  animation: slideUp 1s ease-out forwards 1s;
 }
 
-@keyframes slideUp {
+@keyframes slideUp { /*for bhabuk.b transition */
   from {
     opacity: 0;
     transform: translateY(20px);
