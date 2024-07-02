@@ -138,11 +138,18 @@ body {
 .header-text p:hover .separator2 {
     color: #ff004f; /* Change to "Designer" color */
 }
-.header-text h1 {
-  font-size: 60px;
+.header-text h1.intro-text {
+  font-family: 'Kalam', sans-serif;
+  font-size: 54px;
   margin-top: 20px;
   opacity: 0;
   animation: slideUp 1s ease-out forwards 1s;
+}
+
+.header-text h1.intro-text span {
+  font-family: 'Caveat', sans-serif;
+  font-size: 58px;
+  color: #ff004f;
 }
 
 @keyframes slideUp { /*for bhabuk.b transition */
@@ -239,7 +246,7 @@ nav ul li a:hover::after {
 /* About Section */
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: #ffffff;
 }
 
 .row {
@@ -260,14 +267,18 @@ nav ul li a:hover::after {
 .about-col-2 {
   flex-basis: 60%;
 }
-
-.sub-title {  /*about me */
-  font-size: 60px;
-  font-weight: 600;
-  color: #fff;
+.section-title{ /*about me*/
+  margin:8px 0;
+  font-size: 44px;
+  font-weight: 0;
+  color:#f2eeef;
+  margin-top:0px;
 }
 
+
+
 .tab-titles {
+  color: #ffffff;;
   display: flex;
   margin: 20px 0 40px;
 }
@@ -316,7 +327,12 @@ nav ul li a:hover::after {
 
 /* Services Section */
 #services {
+  font-size: 24px;
   padding: 30px 0;
+}
+.sub-title{
+  font-size: 44px;
+  color: #ffffff;
 }
 
 .services-list {
@@ -455,12 +471,12 @@ nav ul li a:hover::after {
 }
 
 .layer {
-  width: 87%;
+  width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), #2b2a2a);
   border-radius: 10px;
   position: absolute;
-  left: 0;
+  left: -10;
   bottom: 0;
   overflow: hidden;
   display: flex;
@@ -723,4 +739,3 @@ form .btn2:hover{
 /* Small Screen Styles */
 @media only screen and (max-width: 600px) {
   /* Add other styles here */
-}
