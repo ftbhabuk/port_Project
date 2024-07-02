@@ -206,6 +206,20 @@ nav {
 .logo:hover {
   transform: scale(1.1);
 }
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo {
+  width: 140px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+nav a:hover .logo {
+  transform: scale(1.1);
+}
 
 nav ul {
   display: flex;
@@ -735,7 +749,3 @@ form .btn2:hover{
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
-/* Small Screen Styles */
-@media only screen and (max-width: 600px) {
-  /* Add other styles here */
