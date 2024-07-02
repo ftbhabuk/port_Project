@@ -1,7 +1,7 @@
 problems:
-experience doesn't automatically shows untill you click it
-portfolio section problem
+change font of "HI i'm bhabuk.b from lamj."
+change font of  about me
+myservices
+my work and font size too yl
 
-add scroll
-problem 1: tiem delay for rendering or viewing of "Hi, I'm Bhabuk
-.B from Lamjung"
+change my work image pop ou mahe it support for all screens
