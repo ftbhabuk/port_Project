@@ -18,25 +18,40 @@ function opentab(event, tabname) {
 var sidemenu = document.getElementById("sidemenu");
 var overlay = document.getElementById("nav-overlay");
 
-function openmenu() {
-  sidemenu.style.right = "0";
-  overlay.style.display = "block";
-  document.body.style.overflow = 'hidden';
+function toggleMenu() {
+  const menu = document.querySelector('nav ul');
+  const body = document.body;
+  
+  if (menu.classList.contains('show')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
 }
 
-function closemenu() {
-  sidemenu.style.right = "-200px";
-  overlay.style.display = "none";
-  document.body.style.overflow = 'auto';
+function openMenu() {
+  const menu = document.querySelector('nav ul');
+  const body = document.body;
+  
+  menu.classList.add('show');
+  body.classList.add('menu-open');
 }
 
-// Close menu when clicking on a menu item
-document.querySelectorAll('#sidemenu a').forEach(item => {
-  item.addEventListener('click', closemenu);
+function closeMenu() {
+  const menu = document.querySelector('nav ul');
+  const body = document.body;
+  
+  menu.classList.remove('show');
+  body.classList.remove('menu-open');
+}
+
+// Close menu when clicking on menu items
+document.querySelectorAll('nav ul li a').forEach(item => {
+  item.addEventListener('click', closeMenu);
 });
 
-// Close menu when clicking outside
-overlay.addEventListener('click', closemenu);
+// Toggle menu on menu button click
+document.querySelector('.fa-bars').addEventListener('click', toggleMenu);
 
 
 //google submit//
