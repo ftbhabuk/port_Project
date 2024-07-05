@@ -704,6 +704,13 @@ form .btn2:hover{
   .logo {
     width: 85px; 
   }
+  .fa-solid {
+    transition: transform 0.3s ease;
+  }
+  
+  .fa-xmark {
+    transform: rotate(180deg);
+  }
 
   .fa-bars { /*menu button*/
     display: block;
@@ -715,6 +722,14 @@ form .btn2:hover{
     z-index: 4;
 
   }
+  /* no need at all  */
+  /* .fa-solid.fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+} */
   body.menu-open {
     overflow: hidden;
   }
