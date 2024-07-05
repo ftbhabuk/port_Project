@@ -707,22 +707,22 @@ form .btn2:hover{
 
   .fa-bars { /*menu button*/
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 4;
-    transition: transform 0.3s ease;
+
   }
   body.menu-open {
     overflow: hidden;
   }
   .fa-bars.active {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
-  
-  body.menu-open::after {
+   /*waht does it exactly does*/
+  /* body.menu-open::after {
     content: '';
   position: fixed;
   top: 0;
@@ -730,10 +730,11 @@ form .btn2:hover{
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   z-index: 2;
   transition: opacity 0.3s ease;
-  }
+  
+  } */
 
   .sub-title {
     font-size: 32px;
@@ -790,7 +791,7 @@ form .btn2:hover{
   }
 }
 
-#nav-overlay {
+#nav-overlay { /*page screen while sub menu is being opened*/
   display: none;
   position: fixed;
   top: 0;
@@ -799,4 +800,5 @@ form .btn2:hover{
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  backdrop-filter: blur(2px);
 }

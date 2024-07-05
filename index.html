@@ -1,3 +1,4 @@
+<!--sub menu works fine-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,17 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-  <script src="script.js"></script>
+
+
+  
 </head>
 <body>
   <div id="header">
     <div class="container">
       <nav>
-        <a href="#header">
-          <img src="images/logo.png" class="logo" alt="logo">
-        </a>
+        <img src="images/logo.png" class="logo">
         <ul id="sidemenu">
           <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
           <li><a href="#header">Home</a></li>
@@ -29,9 +30,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
       </nav>
-      <div class="header-text">
+       <div class="header-text">
         <p>
           <span class="designer">Designer</span>
           <span class="separator1">/</span><span class="separator2">/</span>
@@ -50,7 +50,7 @@
           <img src="images/user.jpg">
         </div>
         <div class="about-col-2">
-          <h1 class="section-title">About Me</h1>
+          <h1 class="sub-title">About Me</h1>
           <p>You can categorize me as adaptive learner !!</p>
 
           <div class="tab-titles">
@@ -112,6 +112,7 @@
     </div>
   </div>
 
+
   <!-- Portfolio Section -->
   <div id="portfolio">
     <div class="container">
@@ -146,44 +147,103 @@
     </div>
   </div>
 
-  <!-- Contact Section -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1>Contact Me</h1>
-          <p><i class="fa-brands fa-telegram"></i>ftraveller23@gmail.com</p>
-          <p><i class="fa-solid fa-square-phone"></i>9745281196</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/bhabuk.bhattarai.77"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/FellowTravell20"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Ftbhabok"><i class="fa-brands fa-github"></i></a>
-          </div>
-          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1>Contact Me</h1>
+        <p><i class="fa-brands fa-telegram"></i>ftraveller23@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>9745281196</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/bhabuk.bhattarai.77"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/FellowTravell20"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Ftbhabok"><i class="fa-brands fa-github"></i></a>
         </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="text" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="text" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
       </div>
     </div>
-    <div class="copyright">
-      <p>Copyright @Bhabuk. Made with <i class="fa-solid fa-heart"></i>!!</p>
-    </div>
   </div>
+  <div class="copyright">
+    <p>Copyright @Bhabuk. Made with <i class="fa-solid fa-heart"></i>!!</p>
+  </div>
+</div>
+
 
   <div id="nav-overlay" onclick="closemenu()"></div>
 
   <!-- JavaScript -->
   <script>
-    // <!-- Service learn more transition -->
-  
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    var overlay = document.getElementById("nav-overlay");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+      overlay.style.display = "block";
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+      overlay.style.display = "none";
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close menu when clicking on a menu item
+    document.querySelectorAll('#sidemenu a').forEach(item => {
+      item.addEventListener('click', closemenu);
+    });
+
+    // Close menu when clicking outside
+    overlay.addEventListener('click', closemenu);
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxURh7OEk3X5Jy9aEL6ttvECeT85LsCk7x0YkRGKqSoxbPQpEChPdrF2Wn44TK2LWPpuA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function() {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <!-- Service learn more transition -->
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
       const serviceDivs = document.querySelectorAll('.services-list div');
       
@@ -191,17 +251,14 @@
         const link = div.querySelector('a');
         
         link.addEventListener('mouseenter', function() {
-          link.classList.add('hover-link');
           div.classList.add('link-hover');
         });
         
         link.addEventListener('mouseleave', function() {
-          link.classList.remove('hover-link');
           div.classList.remove('link-hover');
         });
       });
     });
   </script>
-  
 </body>
 </html>
