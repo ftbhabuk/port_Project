@@ -185,36 +185,36 @@
 
   <!-- JavaScript -->
   <script>
-    var sidemenu = document.getElementById("sidemenu");
-    var overlay = document.getElementById("nav-overlay");
-    var menuIcon = document.querySelector(".fa-solid.fa-bars");
-    var menuOpen = false;
-  
-    function toggleMenu() {
-      if (menuOpen) {
-        sidemenu.style.right = "-200px";
-        overlay.style.display = "none";
-        document.body.style.overflow = 'auto';
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
-      } else {
-        sidemenu.style.right = "0";
-        overlay.style.display = "block";
-        document.body.style.overflow = 'hidden';
-        menuIcon.classList.remove("fa-bars");
-        menuIcon.classList.add("fa-xmark");
-      }
-      menuOpen = !menuOpen;
+  var sidemenu = document.getElementById("sidemenu");
+  var overlay = document.getElementById("nav-overlay");
+  var menuIcon = document.querySelector(".fa-solid.fa-bars");
+  var menuOpen = false;
+
+  function toggleMenu() {
+    if (menuOpen) {
+      sidemenu.style.right = "-200px";
+      overlay.style.display = "none";
+      document.body.style.overflow = 'auto';
+      menuIcon.classList.remove("fa-xmark");
+      menuIcon.classList.add("fa-bars");
+    } else {
+      sidemenu.style.right = "0";
+      overlay.style.display = "block";
+      document.body.style.overflow = 'hidden';
+      menuIcon.classList.remove("fa-bars");
+      menuIcon.classList.add("fa-xmark");
     }
-  
-    // Close menu when clicking on a menu item
-    document.querySelectorAll('#sidemenu a').forEach(item => {
-      item.addEventListener('click', toggleMenu);
-    });
-  
-    // Close menu when clicking outside
-    overlay.addEventListener('click', toggleMenu);
-  </script>
+    menuOpen = !menuOpen;
+  }
+
+  // Close menu when clicking on a menu item
+  document.querySelectorAll('#sidemenu a').forEach(item => {
+    item.addEventListener('click', toggleMenu);
+  });
+
+  // Close menu when clicking outside
+  overlay.addEventListener('click', toggleMenu);
+</script>
 
   <!-- Service learn more transition -->
   <script>

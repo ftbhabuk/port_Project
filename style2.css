@@ -708,10 +708,6 @@ form .btn2:hover{
     transition: transform 0.3s ease;
   }
   
-  .fa-xmark {
-    transform: rotate(180deg);
-  }
-
   .fa-bars { /*menu button*/
     display: block;
     font-size: 18px;
@@ -722,35 +718,11 @@ form .btn2:hover{
     z-index: 4;
 
   }
-  /* no need at all  */
-  /* .fa-solid.fa-bars {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  cursor: pointer;
-} */
+ 
   body.menu-open {
     overflow: hidden;
   }
-  .fa-bars.active {
-    transform: rotate(180deg);
-  }
-   /*waht does it exactly does*/
-  /* body.menu-open::after {
-    content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-  z-index: 2;
-  transition: opacity 0.3s ease;
   
-  } */
-
   .sub-title {
     font-size: 32px;
   }
