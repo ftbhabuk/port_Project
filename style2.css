@@ -670,6 +670,7 @@ form .btn2:hover{
 }
 /* Small Screen Styles */
 @media only screen and (max-width: 600px) {
+  
   .header-text {
     font-size: 14px;
   }
@@ -728,7 +729,7 @@ form .btn2:hover{
     width: 85px; 
   }
   .fa-solid {
-    transition: transform 0.3s ease;
+    transition: transform 1.3s ease;
   }
   
   .fa-bars { /*menu button*/
@@ -739,6 +740,7 @@ form .btn2:hover{
     top: 20px;
     right: 20px;
     z-index: 4;
+    transition: transform 1.3s ease;
 
   }
  
@@ -812,3 +814,4 @@ form .btn2:hover{
   z-index: 2;
   backdrop-filter: blur(2px);
 }
+
