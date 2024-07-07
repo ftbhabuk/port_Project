@@ -144,6 +144,7 @@ body {
   margin-top: 20px;
   opacity: 0;
   animation: slideUp 1s ease-out forwards 1s;
+  color: #474646;
 }
 
 .header-text h1.intro-text span {
@@ -261,6 +262,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ffffff;
+  
 }
 
 .row {
@@ -280,6 +282,8 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+  color: #474646;
+ 
 }
 .section-title{ /*about me*/
   margin:8px 0;
@@ -344,7 +348,7 @@ nav ul li a:hover::after {
   list-style: none;
   margin: 0 0 20px 0; /* This adds space between skills */
   color: #474646;
-  
+
 }
 
 .tab-contents ul li span {
