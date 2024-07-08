@@ -1,19 +1,8 @@
-problem1. while being in big scren and clicking on section of menu ... page gets blur . plus there si cross icon somewhere in the code...
+working_on::
 
 
-1. make responsiveness for small screen.. done
 
+1.make logo icon clickable thus takes page to top.
 
-2.add blur effect over small menu navigation.. done
-
-
+2.keep logo and menu bar on top of screen permanently and make the top screen a bit blur while being scrolling (1. should work with it)
 3.google form submit isn't working in backend check process again 
-
-
-4.animation for learn more made working  ..done
-
-
-5.i want some ideas to try new things to do to view contents of skills experience and education ... done
-
-
-#Connecting replit with github
