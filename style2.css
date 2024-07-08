@@ -124,7 +124,7 @@ body {
     color: #4ecdc4; /* Initial color, same as "Writer" */
 }
 
-/* Hover effect for the entire p element */
+/* Hover effect for the entire //  */
 .header-text p:hover .separator1,
 .header-text p:hover .separator2 {
     transform: scale(1.2); /* Scale up both separators */
@@ -289,7 +289,7 @@ nav ul li a:hover::after {
   margin:8px 0;
   font-size: 44px;
   font-weight: 0;
-  color:#f2eeef;
+  color: #474646;
   margin-top:0px;
 }
 
@@ -369,7 +369,7 @@ nav ul li a:hover::after {
 }
 .sub-title{
   font-size: 44px;
-  color: #ffffff;
+  color: #474646;
 }
 
 .services-list {
