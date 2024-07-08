@@ -192,21 +192,22 @@
     var menuOpen = false;
   
     function toggleMenu() {
-      
-      if (menuOpen) {
-        sidemenu.style.right = "-200px";
-        overlay.style.display = "none";
-        document.body.style.overflow = 'auto';
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
-      } else {
-        sidemenu.style.right = "0";
-        overlay.style.display = "block";
-        document.body.style.overflow = 'hidden';
-        menuIcon.classList.remove("fa-bars");
-        menuIcon.classList.add("fa-xmark");
+      if (window.innerWidth <= 600) {
+        if (menuOpen) {
+          sidemenu.style.right = "-200px";
+          overlay.style.display = "none";
+          document.body.style.overflow = 'auto';
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          sidemenu.style.right = "0";
+          overlay.style.display = "block";
+          document.body.style.overflow = 'hidden';
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        }
+        menuOpen = !menuOpen;
       }
-      menuOpen = !menuOpen;
     }
   
     // Tab switching functionality
