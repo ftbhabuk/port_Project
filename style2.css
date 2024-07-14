@@ -163,15 +163,15 @@ body {
     transform: translateY(0);
   }
 }
-
+/* 
 .header-text h1 span {
   color: #ff004f;
-}
+} */
 
-
-.header-text h1 span { /* Bhabuk.B */
-  color: #ff004f;
-}
+/* 
+.header-text h1 span { 
+  color: #d1c21d;
+} */
 
 .container {
   padding: 10px;
@@ -202,6 +202,8 @@ nav {
 .logo {
   width: 140px;
   transition: transform 0.3s ease;
+  display: block;
+  cursor:pointer;
 }
 
 .logo:hover {
@@ -212,15 +214,16 @@ nav a {
   text-decoration: none;
 }
 
-.logo {
+/* .logo {
   width: 140px;
   transition: transform 0.3s ease;
   display: block;
-}
-
+} */
+ 
+/* 
 nav a:hover .logo {
   transform: scale(1.1);
-}
+} */
 
 nav ul {
   display: flex;
@@ -232,7 +235,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #dbd0d0;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -261,7 +264,7 @@ nav ul li a:hover::after {
 /* About Section */
 #about {
   padding: 80px 0;
-  color: #ffffff;
+  /* color: #ffffff; */
   
 }
 
@@ -279,24 +282,40 @@ nav ul li a:hover::after {
   width: 100%;
   border-radius: 15px;
 }
+h1.sub-title{ 
+  color: #dbd0d0;
+  margin:8px 0;
+  font-size: 44px;
+  font-weight: 0;
+  margin-top:0px;
+/* add just a bit of hover effect */
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1.sub-title:hover {
+  transform: translateY(-2px);
+ 
+}
+
 
 .about-col-2 {
   flex-basis: 60%;
   color: #474646;
  
 }
-.section-title{ /*about me*/
+/* 
+.section-title{
   margin:8px 0;
   font-size: 44px;
   font-weight: 0;
   color: #474646;
   margin-top:0px;
-}
+} */
 
 
 
 .tab-titles {
- color: #474646;
+  color:#dbd0d0;
  display: flex;
  margin: 20px 0 40px;
 }
