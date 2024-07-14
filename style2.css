@@ -558,7 +558,7 @@ h1.sub-title:hover {
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: #fff;
+  background:#080808;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -566,7 +566,7 @@ h1.sub-title:hover {
   transition:box-shadow 0.3s ease;
 }
 .layer a:hover {
-  box-shadow: 0 0 15px #ff004f;
+  box-shadow: 0 0 25px #ff004f;
 }
 
 .work:hover img {
@@ -688,7 +688,12 @@ form .btn2:hover{
   background: #262626;
   font-weight: light;
   margin-left:0px;
+  opacity: ;
+  /* what to do with this ome ?? */
  
+}
+.copyright p{
+color:#dbd0d0;
 }
 
 .copyright i {
