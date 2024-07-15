@@ -370,9 +370,11 @@ h1.sub-title:hover {
 
 .services-list div {
   background: #262626;
+  color: #dbd0d0;
+
   padding: 40px;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: normal;
   border-radius: 10px;
   transition: background 0.3s, transform 0.3s;
   position: relative;
@@ -387,11 +389,11 @@ h1.sub-title:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff004f;
-  
+  background: #000000;  
   transform: translateY(100%);
   transition: transform 0.3s;
   z-index: 0;
+  /* i think this color suits better */
 }
 
 .services-list div > * {
@@ -408,7 +410,8 @@ h1.sub-title:hover {
 }
 
 .services-list div h2 {
-  color: #dbd0d0;
+  color: #ffffff;
+  
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -474,7 +477,7 @@ h1.sub-title:hover {
   
 }
 
-/* Portfolio Section */
+/*------------- Portfolio Section ----------------*/
 #portfolio {
   padding: 50px 0;
 }
