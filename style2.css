@@ -290,10 +290,12 @@ h1.sub-title{
   margin-top:0px;
 /* add just a bit of hover effect */
 transition: color 0.3s ease, transform 0.3s ease;
+opacity:0.5;
 }
 
 h1.sub-title:hover {
   transform: translateY(-2px);
+  opacity:0.8;
  
 }
 
@@ -577,7 +579,8 @@ h1.sub-title:hover {
   height: 100%;
 }
 
-.btn {
+/* merge with donload and submit btn?? yess please */
+.btn { 
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -587,10 +590,12 @@ h1.sub-title:hover {
   text-decoration: none;
   color: #dbd0d0;
   transition: background 0.5s;
+  opacity:0.5;
 }
 
 .btn:hover {
   background: #ff004f;
+  opacity:1;
 }
 
 /* Contact Section */
@@ -600,6 +605,8 @@ h1.sub-title:hover {
 
 .contact-left h1 {
  color:#dbd0d0;
+ /* opacity: 0.9;  add directly to sub-title*/
+ 
 }
 
 .contact-right {
@@ -637,15 +644,17 @@ h1.sub-title:hover {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid #d8215b;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
   color: #dbd0d0;
   transition: background 0.5s; /*submitn cv dwnload btn*/
+  opacity: 0.5;
 }
 .btn.btn2:hover {
   background: #ff004f;
+  opacity: 1.0;
 }
 
 .contact-right form {
@@ -662,6 +671,7 @@ form input, form textarea {
   color: #dbd0d0;
   font-size: 18px;
   border-radius: 6px;
+  
 }
 
 form .btn2 {
@@ -671,10 +681,13 @@ form .btn2 {
   cursor: pointer;
   background:#000000;
   transition: background 0.5s;
+  opacity: 0.5;
 }
 form .btn2:hover{
   background: #ff004f;
+  opacity: 1.0;
 }
+
 #msg {
   color: hsl(120, 87%, 24%);
   margin-top: -40px;
@@ -688,7 +701,7 @@ form .btn2:hover{
   background: #262626;
   font-weight: light;
   margin-left:0px;
-  opacity: ;
+  opacity: 0.5;
   /* what to do with this ome ?? */
  
 }
