@@ -411,16 +411,20 @@ h1.sub-title:hover {
 
 .services-list div h2 {
   color: #ffffff;
-  
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
   
 }
+.services-list div p{
+  color:#4ecdc4;
+  font-weight:normal;
+
+}
 
 .services-list div a {
   text-decoration: none;
-  color: #dbd0d0;
+  color: #ffffff;
   font-size: 14px;
   margin-top: 20px;
   font: weight 0px;
