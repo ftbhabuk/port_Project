@@ -1,9 +1,9 @@
 working_on::
 
 
+1.push menu item to a bit top
 
-
-2 keep logo and menu bar on top of screen permanently and make the top screen a bit blur while being scrolling (1. should work with it)
+2 keep logo and menu bar on top of screen permanently and make the top screen a bit blur while being scrolling (1. should work with it) bad idea haha 
 
 
 3.google form submit isn't working in backend check process again 
