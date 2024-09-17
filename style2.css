@@ -27,7 +27,7 @@ body {
   display: flex; 
   justify-content: flex-end;
   align-items: center; 
-   padding-top: 60px;
+  
 }
 
 .header-text {
@@ -772,13 +772,20 @@ color:#dbd0d0;
     font-size: 18px;
     cursor: pointer;
     position: fixed;
-    top: 20px;
+    top: 10px; /*right height */
     right: 20px;
     z-index: 4;
     transition: transform 1.3s ease;
+    opacity: 0.8;
+    color:#dbd0d0; 
 
   }
  
+  .fa-bars:hover{
+    color:#ffffff;
+    opacity: 1.0;
+  }
+
   body.menu-open {
     overflow: hidden;
   }
